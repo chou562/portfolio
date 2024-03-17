@@ -468,3 +468,16 @@ nav .fas{
         font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Une seule colonne pour les images */
+    }
+
+    .container, .gallery p {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Ajuste la taille du texte pour une meilleure lisibilité */
+    }
+}
