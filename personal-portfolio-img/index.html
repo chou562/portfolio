@@ -16,9 +16,9 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#project">Academic Projects</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li style="display: none;"><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -142,7 +142,7 @@
     </div>
 </div>
 <!----------------------- contact----------------------------- -->
-<div style="display: none;" id="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -154,12 +154,12 @@
                 </div>
                 <a href="cv/cv chiffré alternance.pdf" download class="btn btn2">Download the CV</a>
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Nom Prénom" required>
+            <div style="display: none;" class="contact-right">
+                <form action = "https://formsubmit.co/your@email.com" method="post">
+                    <input type="text" name="name" placeholder="Nom Prénom" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="Message" rows="6" placeholder="Message" ></textarea>
-                    <button type="submit" class="btn btn2">Send</button>
+                    <button type="submit" value="Send" class="btn btn2">Send</button>
                 </form>
             </div>
             <div class='large-font text-center top-20'>
@@ -170,7 +170,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright</p>
+        <p>© 2024 CHAN HAOR KING Channia. All rights reserved.</p>
     </div>
 </div>
 
@@ -203,6 +203,9 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js">
 </script>
 
 </body>
