@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-----------portfolio----------->
-<div id="portfolio">
+<!-- <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">BUT2</h1>
         <div class="work-list">
@@ -33,4 +33,78 @@
 </div>
 
 </body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roue</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permet aux éléments de passer en dessous l'un de l'autre si la fenêtre est trop petite */
+        }
+        .section {
+            margin: 20px;
+            flex-basis: 45%; /* Définit une base pour la largeur de chaque section, permettant un peu d'espacement entre elles */
+        }
+        h1, h3, span, iframe {
+            margin-bottom: 20px; /* Ajustement global de l'espacement */
+        }
+        iframe {
+            width: 100%; /* Rend les iframes et images responsives à la largeur de leur conteneur */
+            max-width: 600px; /* Limite la largeur maximale */
+            border-radius: 5%; /* Style ajouté directement sur les iframes dans votre code, mais c'est mieux de le gérer ici */
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        img{
+            width: auto;
+            height: 50px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="section">
+            <h1>Wheel</h1>
+            <iframe src="rapport/Rapport SAE ROUE (1).pdf" width="600" height="600"></iframe>
+            <br><span>
+                The goal of this project is to control
+                        a brushless motor connected to a bicycle wheel
+                        in order to regulate the speed.
+            </span>
+            <h1>Skills</h1>
+            <img src="images/vhdl.png" alt="vhdl">
+            <img src="images/quartus.png" alt="quartus">
+        </div>
+
+        <div class="section">
+            <h1>LoraWAN</h1>
+            <iframe src="rapport/Rapport SAE LORA-CHAN-ALLARD.pdf" width="600" height="600"></iframe>
+            <br><span>This project aims to develop a bicycle rental system using
+                RFID badges to authenticate
+                user's subscriptions by using the
+                LoraWAN communication protocol...
+            </span>
+            <h1>Skills</h1>
+            <img src="images/LoRaWAN-logo.jpg" alt="LoraWAN">
+            <img src="images/node-red.png" alt="Node-RED">
+            <img src="images/ttn.png" alt="TTN">
+        </div>
+    </div>
+    <a href="index.html#project" class="btn">Back</a>
+</body>
 </html>
+
+

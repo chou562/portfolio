@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    background: #2F4F4F;
     color: #fff;
 }
 #header {
@@ -87,9 +87,11 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis: 35%;
+    border-radius: 20px;
 }
 .about-col-1 img{
     width: 100%;
+    border: 10px solid;
     border-radius: 15px;
 }
 
@@ -197,6 +199,23 @@ nav ul li a:hover::after{
     padding: 50px 0;
 
 }
+/* icone */
+.fa-sharp{
+    color: #0abdc6;
+}
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Taille du cercle */
+    height: 50px; /* Taille du cercle */
+    background-color: white; /* Couleur du fond du cercle */
+    border-radius: 50%; /* Rend le fond complètement rond */
+    color: white; /* Couleur de l'icône */
+}
+.h3_portfolio{
+    color: white;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -301,7 +320,9 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: transform 0.5s;
 }
-
+.fa-solid{
+    color: #0abdc6;
+}
 .social-icons a:hover{
     color: #0abdc6;
     transform: translateY(-5px);
@@ -402,6 +423,14 @@ body.art {
     border: 5px solid white; 
     padding: 20px;
 }
+
+/* css for video */
+.video-frame {
+    border: 10px solid white; /* Ajustez la largeur du bord selon vos préférences */
+    display: block;
+    margin: 0 auto; /* Pour centrer le vidéo si nécessaire */
+}
+
 
 /* ----------css for small screnn -----------*/
 nav .fas{

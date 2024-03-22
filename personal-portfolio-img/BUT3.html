@@ -4,33 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3eca7b22ce.js" crossorigin="anonymous"></script>
     <title>BUT3</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfolio-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .section {
+            margin: 20px;
+            flex-basis: 45%;
+            max-width: 45%;
+        }
+        h1, h3, span, video {
+            margin-bottom: 20px;
+        }
+        video {
+            max-width: 100%;
+        }
+        .btn {
+            display: block; /* Changes from inline to block */
+            margin: 20px auto;
+        }
+        img{
+            width: auto;
+            height: 50px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-----------portfolio----------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">BUT3</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/art.jpg" alt="">
-                <div class="layer">
-                    <h3>Kinect</h3>
-                    <a href="Kinect.html"><i class="fa-sharp fa-solid fa-code"></i></a>
-                </div>
+        <div class="portfolio-section">
+            <div class="section">
+                <h1>Robotic Arm</h1>
+                <video class="video-frame" width="225" height="380" autoplay muted>
+                    <source src="video/robotic_arm.mp4" type="video/mp4">
+                </video>
+                <br><br><span>The objective of this project the controlling of
+                    a robotic arm. This arm can detect objects and colors...
+                </span>
+                <h1>Skills</h1>
+                <img src="images/Python-logo.png" alt="python">
+                <img src="images/coppelia.png" alt="coppelia">
             </div>
-            <div class="work">
-                <img src="images/tech.jpg" alt="">
-                <div class="layer">
-                    <h3>Robotic Arm</h3>
-                    <a href="Bras_robotique.html"><i class="fa-sharp fa-solid fa-code"></i></a>
-                </div>
+            <div class="section">
+                <h1>Kinect</h1>
+                <span>During this project I had the opportunity to use the Microsoft Kinect for body tracking...
+                </span>
+                <br><br><h1>Skills</h1>
+                <img src="images/Python-logo.png" alt="python">
             </div>
         </div>
-        <a href="index.html#project" class="btn">Home</a>
+        <a href="index.html#project" class="btn">Back</a>
     </div>
 </div>
-
 </body>
 </html>
